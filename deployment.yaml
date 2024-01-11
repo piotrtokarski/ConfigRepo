@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: zad2-container
-        image: piotrtokarski/webapplication:1.0
+        image: piotrtokarski/app:1.0
   strategy:
     type: RollingUpdate
     rollingUpdate:
