@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: task2-ingress
+spec:
+  rules:
+  - host: zad2.lab
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: task2-service
+            port:
+              number: 80
