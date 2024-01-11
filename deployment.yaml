@@ -6,15 +6,15 @@ spec:
   replicas: 4
   selector:
     matchLabels:
-      app: zad2
+      app:latest
   template:
     metadata:
       labels:
-        app: zad2
+        app:latest
     spec:
       containers:
       - name: zad2-container
-        image: piotrtokarski/app:1.0
+        image: piotrtokarski/app:latest
   strategy:
     type: RollingUpdate
     rollingUpdate:
